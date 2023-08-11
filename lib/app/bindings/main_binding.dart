@@ -19,3 +19,12 @@ class SettingBinding implements Bindings {
     });
   }
 }
+
+class UpdateProfileBinding extends Bindings {
+  @override
+  void dependencies() {
+    Get.lazyPut<SettingController>(() {
+      return SettingController();
+    });
+  }
+}

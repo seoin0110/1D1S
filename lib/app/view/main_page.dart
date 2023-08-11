@@ -12,6 +12,8 @@ import 'package:one_day_one_something/app/view/common/profile/odos_profile_card.
 import 'package:one_day_one_something/app/view/common/system/odos_appbar.dart';
 import 'package:one_day_one_something/app/view/common/system/odos_bottom_navigationbar.dart';
 import 'package:one_day_one_something/app/view/home_page.dart';
+import 'package:one_day_one_something/app/view/setting/setting_sub_page/update_profile_page.dart';
+import 'package:one_day_one_something/app/view/setting/setting_page.dart';
 import '../controller/main/main_controller.dart';
 import '../data/model/enum/menu_code.dart';
 import 'common/system/odos_appbar.dart';
@@ -52,8 +54,8 @@ class MainPage extends BaseView<MainController> {
         return goalPage!;
       case MenuCode.MYPAGE:
         // return goalView;
-        settingPage ??= Container();
-        return settingPage!;
+        // settingPage ??= UpdateProfilePage();
+        return SettingPage()!;
       default:
         // return LoginPage();
         return Container();
